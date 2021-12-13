@@ -20,7 +20,7 @@ if [[ $? -eq 0 ]] && [[ $1 = "push" ]]; then
     docker push ${FULL_ECRNAME}:${IMAGE_NAME}
     echo "Done."
 
-elif [[ $1 != "push" ]]
+elif [[ $1 != "push" ]]; then
     echo "You can push your image on ECR with 'push' argument."
     echo "Usage example:    ./01_build_image.sh [push]"
 fi
